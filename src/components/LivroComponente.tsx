@@ -12,9 +12,9 @@ export default function LivroComponent({ livro, aoRemover }: LivroProps) {
       <h3 className="text-xl font-serif font-bold text-purple-900 flex items-center gap-2 mb-1">
         {livro.titulo}
       </h3>
-      <p ><span className="font-semibold">Autor:</span> {livro.autor}</p>
-      <p ><span className="font-semibold">Ano de Publicação:</span> {livro.anoPublicacao}</p>
-      <p ><span className="font-semibold">Gênero:</span> {livro.genero}</p>
+      <span>Autor:</span> {livro.autor}
+      <span>Ano de Publicação:</span> {livro.anoPublicacao}
+      <span>Gênero:</span> {livro.genero}
       {livro.resumo && (
         <div className="italic text-purple-700 max-h-24 overflow-y-auto pr-2 border border-purple-100 rounded bg-purple-50">
           <span className="font-semibold not-italic">Resumo:</span>
